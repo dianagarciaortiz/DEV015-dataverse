@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mujeres en la tecnología</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"/>
+</head>
+
+<body>
+  <header>
+    <h1> Mujeres en la tecnología</h1>
+  </header>
+  <main>
+    <form id="filtrado">
+
+      <ul> <label> filtrar por: </label>
+          <label>Nombre:</label>
+          <input type="text" id="filtroNombre" name="nombre">
+
+          <button id="resetButton"> Reset </button>
+
+          <label for="areaFiltrado">Área de Estudio:</label>
+          <select id="areaFiltrado" name="area">
+            <option value="placeholder"  disabled="true" selected="true"> Selecciona una opción </option>
+            <option value="Matemáticas">Matemáticas</option>
+            <option value="Economía">Economía</option>
+            <option value="Historia y Literatura">Historia y Literatura</option>
+            <option value="Computación">Computación</option>
+            <option value="Derecho">Derecho</option>
+            <option value="Ingeniería Mecánica">Ingeniería mecánica</option>
+            <option value="Ingeniería química">Ingeniería química</option>
+            <option value="Ingeniería Eléctrica">Ingenieria eléctrica</option>
+            <option value="Salud Pública">Salud Pública</option>
+            <option value="Bioquímica">Bioquímica</option>
+            <option value="Biología">Biología</option>
+            <option value="Relaciones Internacionales">Relaciones internacionales</option>
+          </select>
+
+          <label for="sortOrder">Ordenar por nombre:</label>
+          <select id="sortOrder" name="sortOrder">
+            <option value="placeholder" disabled="true" selected="true"> Selecciona una opción </option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+          </select>
+        </ul>
+
+    </form>
+    <section>
+      <div class="gridConteiner" id="root"> </div>
+    </section>
+  </main>
+
+
+  <script src="main.js" type="module"></script>
+</body>
+
+<footer id="piePagina">
+  Diana Garcia, L, 2024.
+</footer>
+
+</html>
